@@ -1,0 +1,65 @@
+nav{
+    position:absolute;
+    background-image: linear-gradient(black,gray);
+}
+ 
+a {
+    font-family:"cormorant";
+    font-weight:bold;
+    font-size: 1.25rem;
+    color:white;
+}
+.navbar-nav a:hover{
+    color:#97c09f;
+}
+
+.navbar-brand{
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: regular;
+
+}
+.navbar-nav{
+    position:relative;
+    margin-right:auto;
+    margin-left:auto;
+    font-weight:regular;
+}
+
+.jumbotron {
+    background-image: url(../images/fantasy_desktop_wallpaper.png);
+    background-size:cover;
+    height: 75dvh;
+  
+}
+
+.jumbo-lead
+{
+    background-color: #1a2c1e;
+    opacity: 80%;
+    border-radius: 4rem;
+}
+
+div .jumbo-lead{
+    position: relative;
+    float: left;
+    top: 10dvh;
+    height: 24rem;
+    width: 20rem;
+}
+
+.jumbo-lead p{
+    padding: 2rem;
+    padding-top: 3rem;
+    
+}
+
+.main-start-button{
+    background-color:#97c09f;
+    font-family:"cormorant";
+    font-weight: bold;
+    padding: 0.5rem 2rem 0.5rem 2rem;
+    border-radius: 1rem;
+    margin-right: 2rem;
+    float:right;
+}
