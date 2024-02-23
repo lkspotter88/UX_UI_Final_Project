@@ -1,10 +1,22 @@
+h1{
+    font-family:"Cinzel";
+    font-weight: bold;
+    text-align: center;
+}
+
+h2{
+    font-family:'Cormorant';
+    font-weight: bold;
+    text-align: center;
+}
 nav{
     position:absolute;
-    background-image: linear-gradient(black,gray);
+    background-image: linear-gradient(black,transparent);
 }
+
  
 a {
-    font-family:"cormorant";
+    font-family:sans-serif;
     font-weight:bold;
     font-size: 1.25rem;
     color:white;
@@ -14,7 +26,7 @@ a {
 }
 
 .navbar-brand{
-    font-family: sans-serif;
+    font-family: "Cinzel";
     font-size: 32px;
     font-weight: regular;
 
@@ -62,4 +74,26 @@ div .jumbo-lead{
     border-radius: 1rem;
     margin-right: 2rem;
     float:right;
+}
+
+/* Theme group styling */
+.theme-group{
+    background-color: #32465C;
+    color: white;
+    padding-top: 2rem;
+}
+
+.theme-group img{
+    width: 100%;
+    height: auto;
+}
+
+.card-body {
+    background-color: #32465C; 
+}
+
+.btn{
+    
+    background-color: #91d2ce;
+    color: #000;
 }
