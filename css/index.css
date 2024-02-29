@@ -6,7 +6,7 @@ h1{
     font-weight: bold;
     font-size: 2.5rem;
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 3rem;
     padding-bottom:1rem;
     color: #ffffff;
 }
@@ -74,8 +74,10 @@ nav{
 
 .jumbotron {
     background-image: url(../images/fantasy_desktop_wallpaper.png);
+    padding-top: 20%;
+    padding-bottom:20%;
     background-size:cover;
-    height: 80dvh;
+    height: 100dvh;
   
 }
 
@@ -84,12 +86,12 @@ nav{
     float: left;
     background-color: rgba(0,0,0,0.5);
     border-radius: 2.5rem;
-    margin-top:20dvh;
     margin-left:7%;
     margin-bottom:auto;
     width: 30rem;
     flex-direction:row;
     height: fit-content;
+    box-shadow: 0.25rem 0.5rem 0.15rem rgba(0,0,0,0.5);
 }
 
 .jumbo-lead-content{
@@ -105,7 +107,7 @@ nav{
     font-family:"cormorant";
     color: #000;
     /*padding: 0.5rem 2rem 0.5rem 2rem;*/
-    box-shadow:0.25rem 0.5rem 0.25rem rgba(0,0,0,0.25);
+    box-shadow:0.125rem 0.25rem 0.25rem rgba(0,0,0,0.25);
     border-radius: 0.75rem;
     margin-right: 2rem;
     margin-top: 2dvh;
@@ -125,7 +127,7 @@ nav{
 }
 .theme-column{
     padding:1rem;
-    text-align:center;
+    text-align:left;
 }
 .theme-image{
     width:100%;
@@ -144,7 +146,7 @@ nav{
     color: #000;
     border-color:   #91d2ce;
     border-radius: 0.75rem;
-    box-shadow:0.25rem 0.5rem 0.25rem rgba(0,0,0,0.25);
+    box-shadow:0.125rem 0.25rem 0.25rem rgba(0,0,0,0.25);
 }
 
 .theme-button:hover{
