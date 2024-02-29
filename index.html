@@ -12,6 +12,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
     <link href="css/index.css" rel="stylesheet">
 
     <title>Quest Forge</title>
@@ -19,7 +21,7 @@
   <body>
     <nav class="navbar  fixed-top navbar-expand-lg navbar-dark">
       <div class="container-fluid">
-        <a class="navbar-brand text-white" href="#">
+        <a class="navbar-brand ms-3" href="#">
           <img src="images/Logo-Questforge-w2.png" alt="" width="30" height="33 " class="d-inline-block align-text-top">
           QUEST FORGE
         </a>
@@ -29,18 +31,19 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item ">
-              <a class="nav-link text-white active" aria-current="page" href="#">GENERATOR</a>
+              <a class="nav-link" aria-current="page" href="#">Generator</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">THEMES</a>
+              <a class="nav-link" href="#">Themes</a>
             </li>
             
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">INSPIRATION</a>
+              <a class="nav-link" href="#">Inspiration</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#">MY ACCOUNT</a>
+              <a class="nav-link" href="#">My Account</a>
             </li>
+            
 
             <!-- optional dropdown menu
             <li class="nav-item dropdown">
@@ -55,58 +58,105 @@
             </li>
             -->
           </ul>
-          <a class="nav-link text-white" href="#" style="float:right">HELP</a>
+          <ul class="navbar-nav help-link pe-0 me-3">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Help</a>
+            </li>
+          </ul>
+          
         </div>
       </div>
     </nav>
     <!-- Jumbotron-->
     <div class="jumbotron jumbotron-fluid text-white">
-      <div class="container">
-       <div class="container jumbo-lead">
-        <p>Lorem ipsum dolor sit amet consectetur. Aliquet integer egestas 
-          vulputate risus commodo nunc convallis turpis. Eleifend consectetur 
-          faucibus eu tristique eget. Cras felis imperdiet nisl hendrerit 
-          pretium. Sollicitudin 
-          donec aliquet varius arcu.
-        </p>
-        <button class="main-start-button">START</button>
+        <div class="d-flex flex-row align-items-center">
+          <div class="jumbo-lead p-4 m4">
+              <div class="jumbo-lead-content">
+              <h2>WELCOME TO QUEST FORGE!</h2>
+              <p>Quest Forge is an AI-powered tabletop roleplaying game generator. It’s perfect for new Game Masters or 
+                those who are experienced but have hit a creative wall.</p>
+              <p>Where will your adventures take you?</p>
+              </div>
+           </div>
         </div>
-      </div>
+        <div class="d-flex flex-row-reverse">
+          <button class="btn btn-primary main-start-button">START CREATING</button>
+        </div>
     </div> 
-    <!--Theme cards--> 
-    <div class="theme-group">
+     
+  <div class="theme-container justify-items-center">
     <h1>THEMES</h1>
-    <div class="card-group theme-group">
-     <div class="card">
-        <img src="images/theme1.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h2 class="card-title">SCI FI</h2>
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur. Ipsum auctor pulvinar tempus donec aenean venenatis 
-            interdum. Nisi sit adipiscing commodo et suscipit dui integer mauris vivamus. Non arcu non interdum sagittis. 
-            Sit sociis odio elit tristique odio id. Nulla elit volutpat semper etiam condimentum. 
-            Sit condimentum pellentesque ut amet scelerisque scelerisque. Ullamcorper aliquet arcu aliquam vel non scelerisque 
-            amet. Turpis eu adipiscing lorem cursus pellentesque gravida.</p>
-            <a href="#" class="btn btn-primary">START HERE</a>
+    <div class="row row-cols-1 row-cols-lg-3 gx-5 m-4">
+      <div class="col">
+        <div class="theme-column">
+            <img src="images/scifi.png" class="theme-image" alt="...">
+            <h2 class="theme-title">SCI FI</h2>
+            <p class="theme-text">Take an intergalactic adventure full of space ships, foreign planets, aliens, and lasers. The perfect theme for lovers of Star Wars, Star Trek, or Isaac Asimov. Featuring aspects such as time travel, dystopian societies, and intergalactic war, this theme provides complex and futuristic adventures. </p>
+            <p class="theme-text">Make this theme your own with unique character backstories, customized plot points, and endless NPC possibilities to create the ultimate space adventure.</p>
+            <a href="#" class="btn btn-primary theme-button">START HERE</a>
         </div>
       </div>
-      <div class="card">
-        <img src="images/theme2.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h2 class="card-title">FANTASY</h2>
-          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="btn btn-primary">START HERE</a>
-        </div>
+      <div class="col">
+        <div class="theme-column">
+            <img src="images/fantasy.png" class="theme-image" alt="...">
+            <h2 class="theme-title">FANTASY</h2>
+            <p class="theme-text">From dragons and mermaids, to wizards and centaurs, there is a reason that fantasy is the most popular theme of choice. Well known fantasy series include Harry Potter, Lord of The Rings, and many more.  </p>
+            <p class="theme-text">Featuring the characters of your wildest dreams, plot points from 
+              alternate worlds, and magical NPCs, the sky is the limit when it comes to your next fantasy adventure.</p>
+            <a href="#" class="btn btn-primary theme-button">START HERE</a>
+            </div>
       </div>
-      <div class="card">
-        <img src="images/theme3.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h2 class="card-title">OTHER</h2>
-          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-          <a href="#" class="btn btn-primary">START HERE</a>
+      <div class="col">
+        <div class="theme-column">
+            <img src="images/western.png" class="theme-image" alt="...">
+            <h2 class="theme-title">WESTERN</h2>
+            <p class="theme-text">Enjoy wild and unpredictable adventures as you step back in time to the wild west. You can look forward to characters such as the lone gunslinger seeking justice or the lawman standing against corruption. Antagonists may include ruthless outlaws, 
+              greedy land barons, or corrupt officials who threaten the peace and stability of the frontier. </p>
+            <p class="theme-text">
+              Make this theme your own by adding complex character backstories and customized plot points, as well as supporting NPCs.</p>
+            <a href="#" class="btn btn-primary theme-button">START HERE</a>
         </div>
       </div>
     </div>
+  </div>
+  <img src="images/Desktop-Divider.svg" alt="purple line with circles" class="desk-divider">
+  <!--About section-->
+  <div class="container-fluid about-container">
+    <h1>About QuestForge</h1>
+    <div class="row row-cols-1 row-cols-lg-2 gx-5 m-4 align-items-center">
+      <div class="col col-md-5 about-text pe-5">
+        <p>Embark on epic quests, unravel gripping mysteries, and ignite your imagination with
+           QuestForge – the ultimate platform for generating Dungeons and Dragons quests, murder mystery parties, and choose-your-own-adventure experiences. Whether you're a seasoned game master or a novice storyteller, QuestForge empowers you to craft immersive narratives and captivating scenarios with ease.
+        </p>
+      </div>
+      <div class="col col-md-7 ps-2">
+        <img src="images/about.png" alt="..." class="about-image">
+      </div>
     </div>
+  </div>
+  <footer>
+    <div class="flex-row footer-row px-3 pt-3">
+      <div class="flex-column ps-5">
+        <img src="images/email.svg" alt="email" class="footer-icon">
+        questforge@mail.com 
+      </div>
+    </div>
+    <div class="flex-row footer-row px-3 pt-3">
+      <div class="col flex-column ps-5 pe-5">
+        <img src="images/instagram.svg" alt="instagram" class="footer-icon">
+        Instagram
+      </div>
+    </div>
+    <div class="flex-row footer-row px-3 pt-3 pb-5">
+      <div class="col flex-column ps-5 pe-5">
+          <img src="images/facebook.svg" alt="email" class="footer-icon">
+          Facebook
+      </div>
+    </div>
+  </footer>       
+     
+        
+    
       <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

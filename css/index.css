@@ -1,33 +1,62 @@
+body{
+    background-color:#32465C;
+}
 h1{
     font-family:"Cinzel";
     font-weight: bold;
+    font-size: 2.5rem;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom:1rem;
+    color: #ffffff;
 }
 
 h2{
     font-family:'Cormorant';
     font-weight: bold;
+    font-size:1.5rem;
     text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+p{
+    font-family:'Nunito',sans-serif;
+    font-size: 1.25rem;
+}
+
+.desk-divider{
+    width:92%;
+    margin-left:3%;
+    margin-right:3%;  
 }
 nav{
     position:absolute;
-    background-image: linear-gradient(black,transparent);
+    background-image: linear-gradient(black,rgba(0,0,0,0.5) );
 }
 
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+}
  
-a {
-    font-family:sans-serif;
-    font-weight:bold;
+ nav a {
+    color:white;
+    font-family:"Nunito";
+    font-weight:regular;
     font-size: 1.25rem;
     color:white;
 }
-.navbar-nav a:hover{
-    color:#97c09f;
+.nav-link:hover{
+    color:#ffa05b !important;
+}
+
+.help-link{
+    margin-right:0;
 }
 
 .navbar-brand{
     font-family: "Cinzel";
-    font-size: 32px;
+    font-size: 2rem;
     font-weight: regular;
 
 }
@@ -38,62 +67,116 @@ a {
     font-weight:regular;
 }
 
+.navbar-dark .navbar-toggler{
+    color:#fff;
+    border-color:#fff;
+}
+
 .jumbotron {
     background-image: url(../images/fantasy_desktop_wallpaper.png);
     background-size:cover;
-    height: 75dvh;
+    height: 80dvh;
   
 }
 
-.jumbo-lead
-{
-    background-color: #1a2c1e;
-    opacity: 80%;
-    border-radius: 4rem;
-}
-
-div .jumbo-lead{
+.jumbo-lead{
     position: relative;
     float: left;
-    top: 10dvh;
-    height: 24rem;
-    width: 20rem;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 2.5rem;
+    margin-top:20dvh;
+    margin-left:7%;
+    margin-bottom:auto;
+    width: 30rem;
+    flex-direction:row;
+    height: fit-content;
 }
 
-.jumbo-lead p{
-    padding: 2rem;
-    padding-top: 3rem;
-    
+.jumbo-lead-content{
+    position:relative;
+    font-size:smaller;
+    opacity:100% !important;
 }
+
 
 .main-start-button{
-    background-color:#97c09f;
+    background-color:#ffa05b;
+    border-color:#ffa05b;
     font-family:"cormorant";
-    font-weight: bold;
-    padding: 0.5rem 2rem 0.5rem 2rem;
-    border-radius: 1rem;
+    color: #000;
+    /*padding: 0.5rem 2rem 0.5rem 2rem;*/
+    box-shadow:0.25rem 0.5rem 0.25rem rgba(0,0,0,0.25);
+    border-radius: 0.75rem;
     margin-right: 2rem;
-    float:right;
+    margin-top: 2dvh;
+    
+}
+.main-start-button:hover{
+    background-color: #cf806c;
+    border-color:#cf806c;
+    color:white;
+    box-shadow: 0.25rem 0.5rem 0.5rem rgba(0,0,0,0.5);
 }
 
 /* Theme group styling */
+.theme-container{
+    background-color: #32465c; 
+    color: #fff;
+}
+.theme-column{
+    padding:1rem;
+    text-align:center;
+}
+.theme-image{
+    width:100%;
+}
+
 .theme-group{
     background-color: #32465C;
     color: white;
     padding-top: 2rem;
 }
 
-.theme-group img{
-    width: 100%;
-    height: auto;
-}
-
-.card-body {
-    background-color: #32465C; 
-}
-
-.btn{
-    
+.theme-button{
+    float:bottom;
+    font-family:"cormorant";
     background-color: #91d2ce;
     color: #000;
+    border-color:   #91d2ce;
+    border-radius: 0.75rem;
+    box-shadow:0.25rem 0.5rem 0.25rem rgba(0,0,0,0.25);
+}
+
+.theme-button:hover{
+    color:white !important;
+    background-color:#5f888a;
+    border-color: #5f888a;
+    box-shadow: 0.25rem 0.5rem 0.5rem rgba(0,0,0,0.5);
+}
+
+.about-text{
+    color:white;
+}
+
+.about-image{
+    width:100%;
+}
+
+.footer{
+    width: 100%;
+    margin:0;
+    padding:0;
+    color: #91d2ce;
+}
+
+.footer-row{
+    height: fit-content;
+    width:100%;
+    margin-right:0;
+    background-color:#131d24;
+    color:#91d2ce;
+}
+
+.footer-icon{
+    width: 1.5rem;
 }
